@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    align-items: center;
+    img{
+        width: 7rem;
+        height: 100%;
+    }
+    h1{
+        color: #655454; // todo: should have used a variable here.
+        padding-left: 15px;
+    }
+}
