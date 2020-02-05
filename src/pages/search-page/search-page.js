@@ -44,13 +44,13 @@ class SearchPage extends React.Component {
 
   render() {
     const { gists, username } = this.state;
-    const shortGists = gists.splice(0,2);
+
     return (
       <React.Fragment>
         <SearchBar onSearch={this.onSearch} />
         {gists.length > 0 && (
           <Listing>
-            {shortGists.map(gist => (
+            {gists.map(gist => (
               <GistItem
                 key={gist.id}
                 id={gist.id}
